@@ -9,6 +9,22 @@
 /* Begin PBXBuildFile section */
 		697F6C2BBD35072EDD2DDD1E /* libPods-8controlleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD1AED1714D636C9EB74189 /* libPods-8controlleProject.a */; };
 		FD52DAE629BB89C7004699C6 /* CustomProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */; };
+		FD52DAE829BC5069004699C6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE729BC5069004699C6 /* Colors.swift */; };
+		FD52DAEA29BC520D004699C6 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE929BC520D004699C6 /* UIColor+Extention.swift */; };
+		FD52DAF429BC5DFA004699C6 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAF329BC578F004699C6 /* Ubuntu-Bold.ttf */; };
+		FD52DAF529BC5DFA004699C6 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAEF29BC578F004699C6 /* Ubuntu-Regular.ttf */; };
+		FD52DAF629BC5DFA004699C6 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAEE29BC578F004699C6 /* Ubuntu-MediumItalic.ttf */; };
+		FD52DAF729BC5DFA004699C6 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAF029BC578F004699C6 /* Ubuntu-Light.ttf */; };
+		FD52DAF829BC5DFA004699C6 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAED29BC578F004699C6 /* Ubuntu-Medium.ttf */; };
+		FD52DAF929BC5DFA004699C6 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAF229BC578F004699C6 /* Ubuntu-Italic.ttf */; };
+		FD52DAFA29BC5DFA004699C6 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAF129BC578F004699C6 /* Ubuntu-BoldItalic.ttf */; };
+		FD52DAFB29BC5DFA004699C6 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD52DAEC29BC578E004699C6 /* Ubuntu-LightItalic.ttf */; };
+		FD52DAFF29BC6FEF004699C6 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAFE29BC6FEF004699C6 /* ProgressView.swift */; };
+		FD52DB0129BC772F004699C6 /* MyLessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DB0029BC772F004699C6 /* MyLessonsView.swift */; };
+		FD52DB0329BC7C3A004699C6 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DB0229BC7C3A004699C6 /* LessonTableViewCell.swift */; };
+		FD52DB0529BC7C6D004699C6 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DB0429BC7C6D004699C6 /* UIView+Extention.swift */; };
+		FD52DB0729BC8146004699C6 /* UIFont+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DB0629BC8146004699C6 /* UIFont+Extentions.swift */; };
+		FD52DB0E29BC87DD004699C6 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DB0D29BC87DD004699C6 /* Lesson.swift */; };
 		FD6113CE29BB81A7000C4B68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6113CD29BB81A7000C4B68 /* AppDelegate.swift */; };
 		FD6113D029BB81A7000C4B68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6113CF29BB81A7000C4B68 /* SceneDelegate.swift */; };
 		FD6113D229BB81A7000C4B68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6113D129BB81A7000C4B68 /* ViewController.swift */; };
@@ -21,6 +37,22 @@
 		F097DB088FBC3D980B48674D /* Pods-8controlleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8controlleProject.debug.xcconfig"; path = "Target Support Files/Pods-8controlleProject/Pods-8controlleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EC06F9B98F7AAE84D90195 /* Pods-8controlleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8controlleProject.release.xcconfig"; path = "Target Support Files/Pods-8controlleProject/Pods-8controlleProject.release.xcconfig"; sourceTree = "<group>"; };
 		FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressBar.swift; sourceTree = "<group>"; };
+		FD52DAE729BC5069004699C6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		FD52DAE929BC520D004699C6 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
+		FD52DAEC29BC578E004699C6 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		FD52DAED29BC578F004699C6 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		FD52DAEE29BC578F004699C6 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FD52DAEF29BC578F004699C6 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		FD52DAF029BC578F004699C6 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		FD52DAF129BC578F004699C6 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FD52DAF229BC578F004699C6 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		FD52DAF329BC578F004699C6 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		FD52DAFE29BC6FEF004699C6 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		FD52DB0029BC772F004699C6 /* MyLessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLessonsView.swift; sourceTree = "<group>"; };
+		FD52DB0229BC7C3A004699C6 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		FD52DB0429BC7C6D004699C6 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		FD52DB0629BC8146004699C6 /* UIFont+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extentions.swift"; sourceTree = "<group>"; };
+		FD52DB0D29BC87DD004699C6 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		FD6113CA29BB81A7000C4B68 /* 8controlleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 8controlleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6113CD29BB81A7000C4B68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6113CF29BB81A7000C4B68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +91,64 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FD52DAEB29BC577B004699C6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DAF329BC578F004699C6 /* Ubuntu-Bold.ttf */,
+				FD52DAF129BC578F004699C6 /* Ubuntu-BoldItalic.ttf */,
+				FD52DAF229BC578F004699C6 /* Ubuntu-Italic.ttf */,
+				FD52DAF029BC578F004699C6 /* Ubuntu-Light.ttf */,
+				FD52DAEC29BC578E004699C6 /* Ubuntu-LightItalic.ttf */,
+				FD52DAED29BC578F004699C6 /* Ubuntu-Medium.ttf */,
+				FD52DAEE29BC578F004699C6 /* Ubuntu-MediumItalic.ttf */,
+				FD52DAEF29BC578F004699C6 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD52DB0829BC8780004699C6 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DAE929BC520D004699C6 /* UIColor+Extention.swift */,
+				FD52DB0629BC8146004699C6 /* UIFont+Extentions.swift */,
+				FD52DB0429BC7C6D004699C6 /* UIView+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		FD52DB0929BC879F004699C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DAFE29BC6FEF004699C6 /* ProgressView.swift */,
+				FD52DB0029BC772F004699C6 /* MyLessonsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD52DB0A29BC87A7004699C6 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		FD52DB0B29BC87B2004699C6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DB0229BC7C3A004699C6 /* LessonTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD52DB0C29BC87CB004699C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD52DB0D29BC87DD004699C6 /* Lesson.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FD6113C129BB81A7000C4B68 = {
 			isa = PBXGroup;
 			children = (
@@ -83,7 +173,13 @@
 				FD6113CD29BB81A7000C4B68 /* AppDelegate.swift */,
 				FD6113CF29BB81A7000C4B68 /* SceneDelegate.swift */,
 				FD6113D129BB81A7000C4B68 /* ViewController.swift */,
-				FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */,
+				FD52DB0929BC879F004699C6 /* Views */,
+				FD52DB0829BC8780004699C6 /* Extentions */,
+				FD52DB0A29BC87A7004699C6 /* CustomUI */,
+				FD52DB0B29BC87B2004699C6 /* Cells */,
+				FD52DAEB29BC577B004699C6 /* Fonts */,
+				FD52DAE729BC5069004699C6 /* Colors.swift */,
+				FD52DB0C29BC87CB004699C6 /* Model */,
 				FD6113D629BB81A9000C4B68 /* Assets.xcassets */,
 				FD6113D829BB81A9000C4B68 /* LaunchScreen.storyboard */,
 				FD6113DB29BB81A9000C4B68 /* Info.plist */,
@@ -150,8 +246,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD52DAFB29BC5DFA004699C6 /* Ubuntu-LightItalic.ttf in Resources */,
+				FD52DAF529BC5DFA004699C6 /* Ubuntu-Regular.ttf in Resources */,
 				FD6113DA29BB81A9000C4B68 /* LaunchScreen.storyboard in Resources */,
+				FD52DAFA29BC5DFA004699C6 /* Ubuntu-BoldItalic.ttf in Resources */,
+				FD52DAF829BC5DFA004699C6 /* Ubuntu-Medium.ttf in Resources */,
+				FD52DAF929BC5DFA004699C6 /* Ubuntu-Italic.ttf in Resources */,
+				FD52DAF629BC5DFA004699C6 /* Ubuntu-MediumItalic.ttf in Resources */,
 				FD6113D729BB81A9000C4B68 /* Assets.xcassets in Resources */,
+				FD52DAF729BC5DFA004699C6 /* Ubuntu-Light.ttf in Resources */,
+				FD52DAF429BC5DFA004699C6 /* Ubuntu-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,10 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD52DAEA29BC520D004699C6 /* UIColor+Extention.swift in Sources */,
 				FD6113D229BB81A7000C4B68 /* ViewController.swift in Sources */,
+				FD52DAE829BC5069004699C6 /* Colors.swift in Sources */,
+				FD52DB0329BC7C3A004699C6 /* LessonTableViewCell.swift in Sources */,
 				FD6113CE29BB81A7000C4B68 /* AppDelegate.swift in Sources */,
+				FD52DB0529BC7C6D004699C6 /* UIView+Extention.swift in Sources */,
+				FD52DB0E29BC87DD004699C6 /* Lesson.swift in Sources */,
+				FD52DAFF29BC6FEF004699C6 /* ProgressView.swift in Sources */,
 				FD6113D029BB81A7000C4B68 /* SceneDelegate.swift in Sources */,
+				FD52DB0129BC772F004699C6 /* MyLessonsView.swift in Sources */,
 				FD52DAE629BB89C7004699C6 /* CustomProgressBar.swift in Sources */,
+				FD52DB0729BC8146004699C6 /* UIFont+Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

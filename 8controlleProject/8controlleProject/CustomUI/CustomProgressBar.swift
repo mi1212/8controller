@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import SnapKit
 
 final class CustomProgressBar: UIView {
     
@@ -14,11 +14,38 @@ final class CustomProgressBar: UIView {
     
     private var backgroundShapeColor: UIColor = .white
     
+    let titleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Пройдено уроков"
+        label.textColor = UIColor.white
+        label.layer.opacity = 0.6
+        label.textAlignment = .center
+        label.font = UIFont.customBoldFont(size: 14)
+        label.adjustsFontSizeToFitWidth = true
+//        label.backgroundColor = .systemGreen
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+
+    
+    private var progressTitleLabel: UILabel = {
+        let label = UILabel()
+        label.text = "2/4"
+        label.textColor = UIColor.white
+        label.textAlignment = .center
+        label.font = UIFont.customMediumFont(size: 52)
+        label.adjustsFontSizeToFitWidth = true
+//        label.backgroundColor = .systemGreen
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     var progressShapeColor: UIColor   = .white
     
     var lineWidth: CGFloat = 20
     
-    var spaceDegree: CGFloat = 60
+    var spaceDegree: CGFloat = 70
     
     var inset: CGFloat = 0
     
@@ -43,6 +70,7 @@ final class CustomProgressBar: UIView {
     public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        setupTitles()
     }
     
     @available(*, unavailable)
@@ -61,7 +89,7 @@ final class CustomProgressBar: UIView {
         progressShape = CAShapeLayer()
         progressShape.fillColor   = nil
         progressShape.strokeStart = 0.0
-        progressShape.strokeEnd   = 0.0
+        progressShape.strokeEnd   = 0.5
         layer.addSublayer(progressShape)
         
         progressAnimation = CABasicAnimation(keyPath: "strokeEnd")
@@ -111,13 +139,13 @@ final class CustomProgressBar: UIView {
     }
     
     private func updateShapes() {
-        backgroundShape?.lineWidth  = lineWidth
+        backgroundShape?.lineWidth = lineWidth
         backgroundShape?.strokeColor = backgroundShapeColor.cgColor
-        backgroundShape?.lineCap     = CAShapeLayerLineCap.round
+        backgroundShape?.lineCap = CAShapeLayerLineCap.round
         
         progressShape?.strokeColor = progressShapeColor.cgColor
-        progressShape?.lineWidth   = lineWidth - inset
-        progressShape?.lineCap     = CAShapeLayerLineCap.round
+        progressShape?.lineWidth = lineWidth - inset
+        progressShape?.lineCap = CAShapeLayerLineCap.round
         
         self.progressShape.transform = CATransform3DMakeRotation( CGFloat.pi * 2, 0, 0, 1.0)
         self.backgroundShape.transform = CATransform3DMakeRotation(CGFloat.pi * 2, 0, 0, 1.0)
@@ -146,5 +174,32 @@ final class CustomProgressBar: UIView {
         
         return path
     }
+    
+    // MARK: - Titles
+    
+    private func setupTitles() {
+        addSubview(titleLabel)
+        addSubview(progressTitleLabel)
+        
+        
+        
+        progressTitleLabel.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(60)
+            make.top.equalToSuperview().inset(45)
+            make.height.equalTo(60)
+        }
+        
+        titleLabel.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview().inset(41)
+            make.top.equalTo(progressTitleLabel.snp.bottom).offset(5)
+        }
+    }
+    
+    func setupTitleData(lessonsIsDone: Int, qtyOfLessons: Int){
+        progressTitleLabel.text = "\(lessonsIsDone)/\(qtyOfLessons)"
+    }
+    
+
 }
+
 

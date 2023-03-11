@@ -19,5 +19,12 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Ubuntu-Regular.ttf</string>
+		<string>Ubuntu-Light.ttf</string>
+		<string>Ubuntu-Medium.ttf</string>
+		<string>Ubuntu-Bold.ttf</string>
+	</array>
 </dict>
 </plist>

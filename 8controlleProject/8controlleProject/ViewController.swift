@@ -10,71 +10,52 @@ import SnapKit
 
 class ViewController: UIViewController {
     
-    private lazy var progressBar = CustomProgressBar()
-    
-    private let plusButton: UIButton = {
-        let button = UIButton()
+    let lessons = [
+        Lesson(name: "Тренируем ноты", isDone: true),
+        Lesson(name: "Учим аппликатуру", isDone: true),
+        Lesson(name: "Учим темп(длительность нот)", isDone: true),
+        Lesson(name: "Учим мелодии", isDone: false),
         
-        button.setTitle("+", for: .normal)
-        return button
-    }()
+    ]
     
-    private let minusButton: UIButton = {
-        let button = UIButton()
-        
-        button.setTitle("-", for: .normal)
-        return button
-    }()
+    private let progressView = ProgressView()
+    
+    private let myLessonsView = MyLessonsView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray
         setupLayout()
+        setupProperts()
+        
     }
     
     private func setupLayout() {
-        view.addSubview(progressBar)
-        view.addSubview(plusButton)
-        view.addSubview(minusButton)
+        view.addSubview(progressView)
+        view.addSubview(myLessonsView)
         
-        plusButton.addTarget(self, action: #selector(tapPlusButton), for: .touchUpInside)
-        
-        minusButton.addTarget(self, action: #selector(tapMinusButton), for: .touchUpInside)
-        
-        progressBar.snp.makeConstraints {
-            $0.centerX.centerY.equalTo(view.safeAreaLayoutGuide)
-            $0.width.equalToSuperview().multipliedBy(0.6)
-            
-            $0.height.equalTo(progressBar.snp.width)
+        progressView.snp.makeConstraints { make in
+            make.top.leading.trailing.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.47)
         }
         
-        plusButton.snp.makeConstraints { make in
-            make.trailing.equalTo(progressBar)
-            make.top.equalTo(progressBar.snp.bottom)
-            make.width.equalTo(progressBar).multipliedBy(0.5)
-            make.height.equalTo(50)
-        }
-        
-        minusButton.snp.makeConstraints { make in
-            make.leading.equalTo(progressBar)
-            make.top.equalTo(progressBar.snp.bottom)
-            make.width.equalTo(progressBar).multipliedBy(0.5)
-            make.height.equalTo(50)
+        myLessonsView.snp.makeConstraints { make in
+            make.bottom.leading.trailing.equalToSuperview()
+            make.top.equalTo(progressView.snp.bottom).inset(30)
         }
     }
     
-    @objc private func tapPlusButton() {
-        let progress = self.progressBar.progress
-        if progress != 1 {
-            self.progressBar.setProgress(progress: progress+0.1)
-        }
-    }
-    
-    @objc private func tapMinusButton() {
-        let progress = self.progressBar.progress
-        if progress != 0 {
-            self.progressBar.setProgress(progress: progress-0.1)
-        }
+    private func setupProperts() {
+        myLessonsView.lessons = lessons
+        
+        let lessonsIsDone = lessons.filter { $0.isDone == true }.count
+        
+        let qtyOfLessons = lessons.count
+        
+        let progress: Double = Double(lessonsIsDone) / Double(qtyOfLessons)
+        
+        progressView.progressBar.setProgress(progress: progress, animated: false)
+        progressView.progressBar.setupTitleData(lessonsIsDone: lessonsIsDone, qtyOfLessons: qtyOfLessons)
+        
     }
     
 }
