@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupLayout()
         setupProperts()
-        
     }
     
     private func setupLayout() {

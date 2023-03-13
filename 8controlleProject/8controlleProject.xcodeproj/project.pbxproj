@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		697F6C2BBD35072EDD2DDD1E /* libPods-8controlleProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD1AED1714D636C9EB74189 /* libPods-8controlleProject.a */; };
+		FD4DE70D29BF447D003120CD /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4DE70C29BF447D003120CD /* TenthViewController.swift */; };
+		FD4DE70F29BF468D003120CD /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4DE70E29BF468D003120CD /* NotesTableViewCell.swift */; };
+		FD4DE71129BF48E2003120CD /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4DE71029BF48E2003120CD /* NoteView.swift */; };
 		FD52DAE629BB89C7004699C6 /* CustomProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */; };
 		FD52DAE829BC5069004699C6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE729BC5069004699C6 /* Colors.swift */; };
 		FD52DAEA29BC520D004699C6 /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52DAE929BC520D004699C6 /* UIColor+Extention.swift */; };
@@ -36,6 +39,9 @@
 		3BD1AED1714D636C9EB74189 /* libPods-8controlleProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-8controlleProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F097DB088FBC3D980B48674D /* Pods-8controlleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8controlleProject.debug.xcconfig"; path = "Target Support Files/Pods-8controlleProject/Pods-8controlleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F2EC06F9B98F7AAE84D90195 /* Pods-8controlleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-8controlleProject.release.xcconfig"; path = "Target Support Files/Pods-8controlleProject/Pods-8controlleProject.release.xcconfig"; sourceTree = "<group>"; };
+		FD4DE70C29BF447D003120CD /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
+		FD4DE70E29BF468D003120CD /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		FD4DE71029BF48E2003120CD /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 		FD52DAE529BB89C7004699C6 /* CustomProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressBar.swift; sourceTree = "<group>"; };
 		FD52DAE729BC5069004699C6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		FD52DAE929BC520D004699C6 /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
@@ -91,6 +97,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FD4DE70B29BF443A003120CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD6113D129BB81A7000C4B68 /* ViewController.swift */,
+				FD4DE70C29BF447D003120CD /* TenthViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FD52DAEB29BC577B004699C6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +136,7 @@
 			children = (
 				FD52DAFE29BC6FEF004699C6 /* ProgressView.swift */,
 				FD52DB0029BC772F004699C6 /* MyLessonsView.swift */,
+				FD4DE71029BF48E2003120CD /* NoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				FD52DB0229BC7C3A004699C6 /* LessonTableViewCell.swift */,
+				FD4DE70E29BF468D003120CD /* NotesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -172,7 +189,7 @@
 			children = (
 				FD6113CD29BB81A7000C4B68 /* AppDelegate.swift */,
 				FD6113CF29BB81A7000C4B68 /* SceneDelegate.swift */,
-				FD6113D129BB81A7000C4B68 /* ViewController.swift */,
+				FD4DE70B29BF443A003120CD /* Controllers */,
 				FD52DB0929BC879F004699C6 /* Views */,
 				FD52DB0829BC8780004699C6 /* Extentions */,
 				FD52DB0A29BC87A7004699C6 /* CustomUI */,
@@ -296,12 +313,15 @@
 				FD52DAE829BC5069004699C6 /* Colors.swift in Sources */,
 				FD52DB0329BC7C3A004699C6 /* LessonTableViewCell.swift in Sources */,
 				FD6113CE29BB81A7000C4B68 /* AppDelegate.swift in Sources */,
+				FD4DE70F29BF468D003120CD /* NotesTableViewCell.swift in Sources */,
 				FD52DB0529BC7C6D004699C6 /* UIView+Extention.swift in Sources */,
 				FD52DB0E29BC87DD004699C6 /* Lesson.swift in Sources */,
 				FD52DAFF29BC6FEF004699C6 /* ProgressView.swift in Sources */,
 				FD6113D029BB81A7000C4B68 /* SceneDelegate.swift in Sources */,
 				FD52DB0129BC772F004699C6 /* MyLessonsView.swift in Sources */,
+				FD4DE71129BF48E2003120CD /* NoteView.swift in Sources */,
 				FD52DAE629BB89C7004699C6 /* CustomProgressBar.swift in Sources */,
+				FD4DE70D29BF447D003120CD /* TenthViewController.swift in Sources */,
 				FD52DB0729BC8146004699C6 /* UIFont+Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
