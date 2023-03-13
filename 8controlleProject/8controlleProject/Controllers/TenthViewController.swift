@@ -11,10 +11,11 @@ import SnapKit
 final class TenthViewController: UIViewController {
 
     private let notesTabelView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .plain)
         tableView.register(NotesTableViewCell.self, forCellReuseIdentifier: NotesTableViewCell.identifire)
         tableView.layer.cornerRadius = 8
-        tableView.isScrollEnabled = false
+//        tableView.backgroundColor = .tintColor
+//        tableView.isScrollEnabled = false
         return tableView
     }()
     
